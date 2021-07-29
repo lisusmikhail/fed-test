@@ -60,5 +60,18 @@
 
 /* Begin styling the report items here! */
 .reports {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -ms-flex: 0 0 auto;
+}
 
+@media screen and (max-width: 768px) {
+  .reports {
+    justify-content: space-evenly;
+  }
+}
+
+.reports_item {
+  margin-bottom: 30px;
 }
